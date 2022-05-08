@@ -1,0 +1,253 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navbar */
+.navbar{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+   padding-top: 2rem;
+}
+.nav-logo{
+   
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.nav-logo i{
+    font-size: 8rem;
+
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navlinks .navlink{
+     padding: 1rem;
+     /* margin-left: 2rem; */
+     text-align: center;
+     width: 15rem;
+     font-size: 1.5rem;
+     transition: font-size .2s ;
+     /* border: 1px solid salmon; */
+}
+.navlink:hover{
+    font-size: 2rem;
+}
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 6rem; */
+    text-align: center;
+}
+
+.best-gift{
+    /* border: 1px solid rebeccapurple; */
+    flex:5;
+}
+.best-gift > *{
+    margin-bottom: 2.5rem;
+}
+.best-gift h3{
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+}
+.slogan{
+    font-size: 3rem;
+}
+.steve{
+    font-size: 2.5rem;
+}
+.btn-arrow{
+    background-color: var(--black-color);
+    color:var( --primary-color);
+    clip-path: polygon(
+        50% 0%,
+        81% 5%,
+        100% 0,
+        100% 100%,
+        80% 95%,
+        50% 100%,
+        20% 95%,
+        0 100%,
+        0 0,
+        23% 5%
+      );
+
+    transition: clip-path .3s;
+}
+.btn{
+    padding: 1.2rem 3rem;
+}
+.btn-arrow:hover{
+    clip-path: polygon(
+        40% 15%,
+        77% 15%,
+        100% 10%,
+        100% 90%,
+        75% 85%,
+        40% 85%,
+        30% 100%,
+        0 50%,
+        0 50%,
+        30% 0
+      );
+}
+
+/* cube */
+.iphone-box{
+    flex:3;
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* padding-right: 8rem; */
+    padding-top: 5rem;
+    padding-left: 8rem;
+}
+.cube-wrapper{
+    perspective: 100rem;
+    width: 20rem;
+    height: 38rem;
+    position: relative;
+    margin-bottom: 6rem;
+}
+.cube{
+    transform-style: preserve-3d;
+    width: inherit;
+    height: inherit;
+    background-color: #fee;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    position: relative;
+    backface-visibility: none;
+}
+.front-side{
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    background-color: #fee;
+    transform: translateZ(3rem);
+    position: relative;
+}
+.front-side img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+.back-side{
+    background-color: #fee;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateZ(-3rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-side i{
+       font-size: 5rem;
+       color: var(--primary-color);
+       transform: rotateY(180deg);
+}
+.left-side,.right-side{
+    width: 6rem;
+    height: 100%;
+    background-color: #fee;
+    transform:rotateY(90deg) translateZ(-3rem);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-side{
+ transform:rotateY(-90deg) translateZ(-15rem);
+}
+.right-side p, .left-side p{
+    transform: rotateY(180deg);
+    color: var(--primary-color);
+}
+.top-side,.bottom-side{
+    width: 100%;
+    height: 6rem;
+    background-color: #fee;
+    transform: rotateX(90deg);
+    position: absolute;
+}
+.top-side{
+    top: -3rem;
+
+}
+.bottom-side{
+    bottom:-3rem;
+}
+.rotate-arrows{
+    width: 7.5rem;
+    height: 7.5rem;
+    border: .5rem solid var(--black-color);
+    /* margin-left: 8rem; */
+    border-radius: 50%;
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(0,0,0,.9);
+}
+.fas{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #034a53;
+   transition: color .4s;
+}
+.fas:hover{
+    color: var(--primary-color);
+}
+/* control-arrrows */
+.rotate-arrows>div{
+    position: absolute;
+}
+.x-up{
+    /* opacity: 1; */
+   
+    top: 0;
+    left: 45%;
+}
+.y-right{
+ 
+    right: 0;
+    top: 45%;
+}
+.z-up{
+  
+    top: 15%;
+    right: 10%;
+    transform: rotateZ(45deg);
+}
+
+.x-down{
+   
+    bottom: 0;
+    left: 45%;
+}
+.y-left{
+   
+    left: 0;
+    top: 45%;
+}
+.z-down{
+    transform: rotateZ(45deg);
+   bottom: 10%;
+    left: 18%;
+}

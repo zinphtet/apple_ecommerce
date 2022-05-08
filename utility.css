@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    background-color: var(--primary-color);
+    padding-bottom: 5rem;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 38% 100%, 0 100%, 0% 50%);
+}
