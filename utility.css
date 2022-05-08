@@ -9,4 +9,5 @@ header{
     padding-bottom: 5rem;
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 100% 96%, 38% 100%, 0 100%, 0% 50%);
+    transition: background-image 5s;
 }

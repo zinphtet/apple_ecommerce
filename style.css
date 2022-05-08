@@ -133,6 +133,7 @@ html{
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     position: relative;
     backface-visibility: none;
+    transition: transform .5s;
 }
 .front-side{
     width: 100%;
