@@ -11,3 +11,6 @@ header{
     clip-path: polygon(0 0, 100% 0, 100% 96%, 38% 100%, 0 100%, 0% 50%);
     transition: background-image 5s;
 }
+#iPhone{
+    padding: 10rem 5rem;
+}

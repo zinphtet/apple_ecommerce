@@ -39,7 +39,11 @@ html{
      width: 15rem;
      font-size: 1.5rem;
      transition: font-size .2s ;
+     color: var(--black-color);
      /* border: 1px solid salmon; */
+}
+.navlink a {
+ color: inherit;
 }
 .navlink:hover{
     font-size: 2rem;
@@ -180,7 +184,7 @@ html{
 }
 .right-side p, .left-side p{
     transform: rotateY(180deg);
-    color: var(--primary-color);
+    color: #000000;
 }
 .top-side,.bottom-side{
     width: 100%;
@@ -252,3 +256,153 @@ html{
    bottom: 10%;
     left: 18%;
 }
+
+/* //i Phone  */
+
+/* .iphone-title{
+    width: 50rem;
+    height: 40rem;
+    margin: 0 auto;
+    background-color: blue;
+    text-align: center;
+    clip-path: polygon(36% 0, 100% 0, 64% 100%, 0% 100%);
+}
+.iphone-title p{
+    font-size: 6rem;
+    font-weight: 300;
+} */
+
+.iphone-imgs{
+    width: 65rem;
+    height: 45rem;
+    /* background-color: blue; */
+    margin: 0 auto;
+   background: linear-gradient(to bottom,#6edae6,#fff);
+   padding: 5rem;
+   position: relative;
+   margin-top: -42rem;
+   z-index: 1000;
+}
+.iphone-imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.iphone-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 5s;
+}
+.iphone-1{
+    transition: opacity 5s;
+}
+.iphone-imgs:hover .iphone-2{
+       opacity: 1;
+}
+.iphone-imgs:hover .iphone-1{
+    opacity: 0;
+}
+.iphone-title{
+    font-size: 6rem;
+    font-weight: 300;
+    /* text-align: center; */
+    /* border: 1px solid red; */
+    z-index: 10;
+    width: 40rem;
+    height: 60rem;
+    margin: 0 auto;
+    background-color: transparent;
+    /* background: linear-gradient(to bottom,#6edae6,#fff); */
+    position: relative;
+    /* border: 1px solid red; */
+}
+.iphone-title p{
+    z-index: 100;
+    font-weight: 300;
+}
+.iphone-title::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,#6edae6,#fff);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    transform: skewX(-40deg);
+    transform-origin: top right;
+    border-radius: .5rem;
+}
+
+
+.iphone-btns{
+    /* padding-top: 4rem; */
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid rebeccapurple; */
+    justify-content: center;
+    width: min-content;
+}
+.iphone-btn{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--black-color);
+    margin: 4rem ;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.iphone-btn:hover{
+    opacity: .92;
+}
+.iphone-btn::after{
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: .5rem;
+}
+
+.iphone-btn-1::before{
+    content: 'LEARN MORE';
+    display: block;
+    position: absolute;
+    width: max-content;
+    /* border: 1px solid red; */
+    margin-top: -3rem;
+    margin-left: -1.3rem;
+    font-size: 1.2rem;
+    color: #09272b;
+    transition: fonst-size 1s;
+
+}
+.iphone-btn-2::before{
+    content: 'SHOP';
+    display: block;
+    margin-bottom: 5rem;
+    width: 100%;
+   
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-top: -3rem;
+  
+    font-size:1.2rem;
+    color: #09272b;
+    transition: fonst-size 1s;
+}
+
+/* .iphone-btn-1:hover .iphone-btn-1::before{
+    font-size: 1.2rem;
+}
+.iphone-btn-2:hover .iphone-btn-2::before{
+    font-size: 1.2rem;
+} */
