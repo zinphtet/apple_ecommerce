@@ -14,3 +14,32 @@ header{
 #iPhone{
     padding: 10rem 5rem;
 }
+#macbook{
+    padding: 10rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    background-color: var(--black-color);
+    clip-path: polygon(0 3%, 70% 0, 100% 0, 100% 97%, 30% 100%, 0 100%);
+    perspective: 100rem;
+}
+
+/* testing */
+
+.animate .screen{
+    transform: rotateX(0deg);
+}
+.animate .macbook-logo{
+    opacity: 1;
+}
+.animate .loading::after{
+    width: 100%;
+}
+/* .animate .macbook-logo{
+    opacity: 0;
+} */
+.animate .macbook-buy{
+    opacity: 1;
+}

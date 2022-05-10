@@ -9,6 +9,8 @@ const z_up = selectDom('.z-up-arrow');
 const z_down = selectDom('.z-down-arrow');
 const control = selectDom('.rotate-arrows');
 const header_section = selectDom('header');
+const macbook = selectDom('#macbook');
+const innerMacbook = selectDom('.macbook');
 let x = 0;
 let y = 0;
 let z = 0;
@@ -64,3 +66,26 @@ setInterval(() => {
 	header_section.style.transistion = 'background-image 5s';
 	i++;
 }, 10000);
+
+//when macbook click add animate class
+
+// macbook.addEventListener('click', function () {
+// 	innerMacbook.classList.add('animate');
+// });
+
+//intersection observer
+const options = {
+	root: null,
+	rootMargin: '0px',
+	threshold: 0.4,
+};
+
+const callback = (entry, obs) => {
+	let [ent] = entry;
+	if (ent.isIntersecting) {
+		innerMacbook.classList.add('animate');
+	}
+};
+const observer = new IntersectionObserver(callback, options);
+const target = document.querySelector('#macbook');
+observer.observe(target);
