@@ -11,6 +11,13 @@ const control = selectDom('.rotate-arrows');
 const header_section = selectDom('header');
 const macbook = selectDom('#macbook');
 const innerMacbook = selectDom('.macbook');
+const watch_up = selectDom('.watch-up');
+const watch_down = selectDom('.watch-down');
+const watch_left = selectDom('.watch-left');
+const watch_right = selectDom('.watch-right');
+const watch_bands = selectDom('.watch-bands');
+const watch_cases = selectDom('.watch-cases');
+
 let x = 0;
 let y = 0;
 let z = 0;
@@ -89,3 +96,56 @@ const callback = (entry, obs) => {
 const observer = new IntersectionObserver(callback, options);
 const target = document.querySelector('#macbook');
 observer.observe(target);
+
+//watch section
+
+let watch_y = 0;
+let watch_x = 0;
+
+watch_up.addEventListener('click', function () {
+	watch_y -= 25;
+	console.log(watch_y);
+	watch_cases.style.marginTop = `${watch_y}rem`;
+	if (watch_y === -100) {
+		this.classList.add('hide');
+		return;
+	} else {
+		this.classList.remove('hide');
+		watch_down.classList.remove('hide');
+	}
+});
+watch_down.addEventListener('click', function () {
+	watch_y += 25;
+	watch_cases.style.marginTop = `${watch_y}rem`;
+
+	if (watch_y === 100) {
+		this.classList.add('hide');
+		return;
+	} else {
+		this.classList.remove('hide');
+		watch_up.classList.remove('hide');
+	}
+});
+watch_right.addEventListener('click', function () {
+	watch_x -= 25;
+	watch_bands.style.marginLeft = `${watch_x}rem`;
+
+	if (watch_x === -100) {
+		this.classList.add('hide');
+		return;
+	} else {
+		this.classList.remove('hide');
+		watch_left.classList.remove('hide');
+	}
+});
+watch_left.addEventListener('click', function () {
+	watch_x += 25;
+	watch_bands.style.marginLeft = `${watch_x}rem`;
+	if (watch_x === 100) {
+		this.classList.add('hide');
+		return;
+	} else {
+		this.classList.remove('hide');
+		watch_right.classList.remove('hide');
+	}
+});
