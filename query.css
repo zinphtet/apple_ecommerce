@@ -62,9 +62,7 @@
         height: 35rem;
         /* background-color: blue; */
        }
-    .airpods-title{
-       /* color: gold; */
-    }
+    
     .airpod-img-1{
         display: none;
     }
@@ -106,7 +104,11 @@
  .airpods-imgs .airpod-img-1{
      display: none;
  }
- 
+ .iphone-imgs{
+    width: 45rem;
+    height: 30rem;
+    /* background-color: blue; */
+   }
    /* header{
        display: none;
    } */
@@ -130,5 +132,10 @@
    }
    .airpods-imgs img{
     width: 50%;
+   }
+   .iphone-imgs{
+    width: 35rem;
+    height: 25rem;
+    /* background-color: blue; */
    }
 }
