@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+
 
 @media screen and (max-width:900px){
     html{
         font-size: 56.25%;
     }
    .best-gift h3{
-       color:red;
+      
        font-size: 6rem;
    }
    .slogan{
@@ -17,9 +25,9 @@
         font-size: 6rem;
     }
     #airpods{
-        /* padding: 5rem ; */
+       
         height: 70vh;
-        /* border: 1px solid green; */
+       
     }
 }
 @media screen and (max-width:800px){
@@ -27,17 +35,24 @@
         overflow-x: hidden;
     }
     .navbar{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .navbar>*{
         margin-bottom: 2rem;
     }
     .navlinks{
         padding: 2rem;
-        /* border: 1px solid blue; */
+        
     }
     .navlink{
-        /* border: 1px solid red; */
+       
+        -webkit-transition: color .5s;
+       
+        -o-transition: color .5s;
+       
         transition: color .5s;
     }
     .navlink:hover{
@@ -52,7 +67,7 @@
     }
     .header-main{
         position: relative;
-        /* border: 1px solid rgb(243, 6, 168); */
+       
     }
     .rotate-arrows{
         display: none;
@@ -60,7 +75,7 @@
     .iphone-imgs{
         width: 55rem;
         height: 35rem;
-        /* background-color: blue; */
+       
        }
     
     .airpod-img-1{
@@ -71,10 +86,7 @@
         margin: 0rem 3rem;
         cursor: pointer;
     }
-    /* .watch-bands img , .watch-cases img{
-        width: 20rem;
-        height: 20rem;
-     } */
+    
     .airpod-img-2 img{
         width: 40rem;
     }
@@ -85,7 +97,7 @@
     }
     
    .best-gift h3{
-       color:green;
+     
        font-size: 5rem;
    }
    
@@ -95,11 +107,17 @@
     .steve{
     font-size: 1.7rem;
     }
-   
+    .light-speed{
+        font-size: 3rem;
+        color: var(--primary-color);
+  }
+  .macbook-price{
+    font-size: 1.7rem;
+}
  #airpods{
      padding: 2rem ;
-     height: 40vh;
-     /* border: 1px solid green; */
+     height: 60vh;
+   
  }
  .airpods-imgs .airpod-img-1{
      display: none;
@@ -107,13 +125,15 @@
  .iphone-imgs{
     width: 45rem;
     height: 30rem;
-    /* background-color: blue; */
+    
    }
-   /* header{
-       display: none;
-   } */
+  
    .airpods-btns{
-       /* border: 1px solid rebeccapurple; */
+      
+       width: -webkit-max-content;
+      
+       width: -moz-max-content;
+      
        width: max-content;
    }
    .copyright{
@@ -127,11 +147,15 @@
     html{
         font-size: 43.75%;
     }
-   .best-gift h3{
-       color:blue;
-   }
-   .airpods-imgs img{
-    width: 50%;
-   }
+    .mac-btn{
+        padding: .5rem 2.5rem;
+        background: -webkit-gradient(linear,left top, left bottom,from(#6edae6),to(#fff));
+        background: -o-linear-gradient(top,#6edae6,#fff);
+        background: linear-gradient(to bottom,#6edae6,#fff);
+        border: none;
+        outline: none;
+        border-radius: .4rem;
+        cursor: pointer;
+    }
    
 }

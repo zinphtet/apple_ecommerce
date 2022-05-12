@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 a{
     text-decoration: none;
 }
@@ -7,13 +14,17 @@ li{
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 header{
     background-color: var(--primary-color);
     padding-bottom: 5rem;
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 96%, 38% 100%, 0 100%, 0% 50%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 38% 100%, 0 100%, 0% 50%);
+            clip-path: polygon(0 0, 100% 0, 100% 96%, 38% 100%, 0 100%, 0% 50%);
+    -webkit-transition: background-image 5s;
+    -o-transition: background-image 5s;
     transition: background-image 5s;
 }
 #iPhone{
@@ -21,21 +32,32 @@ header{
 }
 #macbook{
     padding: 10rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* border: 1px solid red; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+   
     background-color: var(--black-color);
-    clip-path: polygon(0 3%, 70% 0, 100% 0, 100% 97%, 30% 100%, 0 100%);
-    perspective: 100rem;
+    -webkit-clip-path: polygon(0 3%, 70% 0, 100% 0, 100% 97%, 30% 100%, 0 100%);
+            clip-path: polygon(0 3%, 70% 0, 100% 0, 100% 97%, 30% 100%, 0 100%);
+    -webkit-perspective: 100rem;
+            perspective: 100rem;
 }
 
 
 #watches{
    height: 140vh;
    padding: 20vh 0 ;
-   /* border: 2px solid blue; */
+  
    position: relative;
 }
 
@@ -45,9 +67,9 @@ header{
 }
 #airpods{
     padding: 5rem ;
-    /* height: 100vh; */
-    /* border: 1px solid green; */
+    
 }
 #footer{
     padding: 5rem 0;
 }
+
