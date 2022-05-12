@@ -44,7 +44,8 @@ header{
     visibility: hidden;
 }
 #airpods{
-    padding: 10rem ;
+    padding: 5rem ;
+    /* height: 100vh; */
     /* border: 1px solid green; */
 }
 #footer{

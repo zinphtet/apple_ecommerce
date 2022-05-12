@@ -129,8 +129,10 @@ html{
     height: 38rem;
     position: relative;
     margin-bottom: 6rem;
+    /* border: 1px solid red; */
 }
 .cube{
+    /* border: 1px solid blue; */
     transform-style: preserve-3d;
     width: inherit;
     height: inherit;
@@ -646,31 +648,38 @@ html{
 .airpods{
     /* border: 1px solid red; */
     position: relative;
+    
 }
 .airpods-title{
     position: absolute;
     font-size: 10rem;
     letter-spacing: .5rem;
-    margin-top: 1rem;
-    top:0rem;
     left: 50%;
     color: var(--white-color);
     text-shadow: .1rem 0rem var(--black-color);
     transform: translateX(-50%);
 }
-.airpods-imgs img{
-    width: 57rem;
-}
 
-/* .airpod-img-1{
-    background-color: violet;
-} */
+
+.airpod-img-1{
+    /* background-color: violet; */
+    flex: 1;
+}
 .airpod-img-2{
     background-color: var(--primary-color);
+    flex: 1;
 }
 .airpods-imgs{
     /* border: 3px solid lightskyblue; */
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.airpods-imgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .airpods-btns{
     position: absolute;
