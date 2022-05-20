@@ -30,9 +30,19 @@
        
     }
 }
+@media screen and (max-width:895px){
+    #watches{
+        height: 90vh;
+        /* border: 1px solid blue; */
+    }
+    #airpods{
+        height: 50vh;
+    }
+}
 @media screen and (max-width:800px){
     header{
         overflow-x: hidden;
+        height: 75vh;
     }
     .navbar{
         -webkit-box-orient: vertical;
@@ -90,11 +100,20 @@
     .airpod-img-2 img{
         width: 40rem;
     }
+    #airpods{
+        padding: 2rem ;
+        height: 60vh;
+      
+    }
 }
 @media screen and (max-width:600px){
     html{
         font-size: 50%;
     }
+    /* header{
+       
+        height: 100vh;
+    } */
     
    .best-gift h3{
      
@@ -116,7 +135,7 @@
 }
  #airpods{
      padding: 2rem ;
-     height: 60vh;
+     height: 40vh;
    
  }
  .airpods-imgs .airpod-img-1{
@@ -143,9 +162,23 @@
        right: 10%;
    }
 }
+@media screen and (max-width:580px){
+    header{
+       
+        height: 70vh;
+    }
+    #airpods{
+     
+        height: 50vh;
+      
+    }
+}
 @media screen and (max-width:400px){
     html{
         font-size: 43.75%;
+    }
+    header{
+        height: 75vh;
     }
     .mac-btn{
         padding: .5rem 2.5rem;
@@ -158,4 +191,15 @@
         cursor: pointer;
     }
    
+}
+@media screen and (max-width:380px){
+    header{
+       
+        height: 85vh;
+    }
+    #airpods{
+     
+        height: 50vh;
+      
+    }
 }

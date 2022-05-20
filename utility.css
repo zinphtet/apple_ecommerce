@@ -17,6 +17,12 @@ li{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
+#airpods{
+   
+    padding: 0 5rem;
+
+}
+
 header{
     background-color: var(--primary-color);
     padding-bottom: 5rem;
@@ -65,10 +71,10 @@ header{
     opacity: 0;
     visibility: hidden;
 }
-#airpods{
+/* #airpods{
     padding: 5rem ;
     
-}
+} */
 #footer{
     padding: 5rem 0;
 }
