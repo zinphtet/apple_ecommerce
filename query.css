@@ -165,7 +165,7 @@
 @media screen and (max-width:580px){
     header{
        
-        height: 70vh;
+        height: 80vh;
     }
     #airpods{
      
@@ -177,9 +177,7 @@
     html{
         font-size: 43.75%;
     }
-    header{
-        height: 75vh;
-    }
+   
     .mac-btn{
         padding: .5rem 2.5rem;
         background: -webkit-gradient(linear,left top, left bottom,from(#6edae6),to(#fff));
